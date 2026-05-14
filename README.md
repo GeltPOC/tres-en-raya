@@ -1,23 +1,33 @@
-# Tres en Raya
+# Tres en Raya Online
 
-Juego clásico de Tic-Tac-Toe construido con Next.js 15, TypeScript y Tailwind CSS.
+Juego de Tres en Raya multijugador en tiempo real con WebSockets.
 
 ## Características
 
-- Tablero 3x3 interactivo
-- Turnos alternos entre jugador X y O
-- Detección de ganador (filas, columnas, diagonales)
-- Detección de empate
-- Indicador del turno actual
-- Mensaje de resultado animado
-- Botón para reiniciar la partida
-- Diseño responsive y atractivo
-- Marcadores de victorias por jugador
+- Sistema de salas/lobbies
+- Emparejamiento de jugadores
+- Sincronización del tablero en tiempo real via Socket.IO
+- Indicador de turno
+- Detección de victoria/empate con notificación a ambos jugadores
+- Sistema de revancha
+- Marcador de puntuación
+
+## Stack
+
+- Next.js 15 (App Router)
+- TypeScript
+- Tailwind CSS
+- Socket.IO (servidor WebSocket embebido)
 
 ## Instalación
 
 ```bash
 npm install
+```
+
+## Desarrollo
+
+```bash
 npm run dev
 ```
 
@@ -25,7 +35,14 @@ npm run dev
 
 ```bash
 npm run build
-pm2 start ecosystem.config.js
+npm start
 ```
 
-La aplicación se sirve en `/tres-en-raya`.
+El servidor Socket.IO corre en el puerto 3001 (configurable via `SOCKET_PORT`).
+El servidor Next.js corre en el puerto 3000.
+
+## Variables de entorno
+
+```
+SOCKET_PORT=3001  # Puerto del servidor WebSocket (default: 3001)
+```

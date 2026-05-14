@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* { box-sizing: border-box; }
 
 body {
-  background: #0f0f1a;
+  background: #0f172a;
+  color: #f1f5f9;
+  font-family: 'Inter', sans-serif;
   min-height: 100vh;
+}
+
+.cell-x { color: #f472b6; }
+.cell-o { color: #60a5fa; }
+
+.winning-cell {
+  background: rgba(250, 204, 21, 0.15) !important;
+  border-color: #facc15 !important;
 }

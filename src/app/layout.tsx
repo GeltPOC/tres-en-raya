@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Tres en Raya Online',
-  description: 'Juega al Tres en Raya en tiempo real contra otros jugadores'
+  title: 'Tres en Raya',
+  description: 'Juego clásico Tic-Tac-Toe'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

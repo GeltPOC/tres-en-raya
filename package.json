@@ -1,7 +1,6 @@
 {
   "name": "tres-en-raya",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,18 +9,16 @@
   },
   "dependencies": {
     "next": "^15",
-    "react": "^19",
-    "react-dom": "^19",
-    "socket.io": "^4.7.4",
-    "socket.io-client": "^4.7.4"
+    "react": "^18",
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^22",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "typescript": "^5",
-    "tailwindcss": "^3",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
     "postcss": "^8",
-    "autoprefixer": "^10"
+    "tailwindcss": "^3",
+    "typescript": "^5"
   }
 }

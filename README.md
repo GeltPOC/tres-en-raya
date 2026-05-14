@@ -1,24 +1,36 @@
-# Tres en Raya (Tic-Tac-Toe)
+# Tres en Raya
 
-Juego clásico de Tres en Raya implementado con Next.js 15, TypeScript y Tailwind CSS.
+Juego clásico de Tres en Raya (Tic-Tac-Toe) construido con Next.js, TypeScript y Tailwind CSS.
 
-## Características
-- Modo 2 jugadores (local)
-- Modo contra la IA (algoritmo Minimax)
-- Detección de ganador y empate
-- Historial de puntuación
-- Animaciones y diseño responsive
+## Requisitos
+
+- Node.js 18+
+- npm
 
 ## Instalación
+
 ```bash
 npm install
+```
+
+## Desarrollo
+
+```bash
 npm run dev
 ```
 
 ## Producción
+
 ```bash
 npm run build
 npm start
 ```
 
-Servido en `/tres-en-raya`.
+## Con PM2
+
+```bash
+npm run build
+pm2 start ecosystem.config.js
+```
+
+El proyecto se sirve en `/tres-en-raya`.

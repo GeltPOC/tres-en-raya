@@ -1,36 +1,25 @@
 # Tres en Raya
 
-Juego clásico de Tres en Raya (Tic-Tac-Toe) construido con Next.js, TypeScript y Tailwind CSS.
-
-## Requisitos
-
-- Node.js 18+
-- npm
-
-## Instalación
-
-```bash
-npm install
-```
+Juego multijugador de Tres en Raya en tiempo real usando Next.js y Socket.io.
 
 ## Desarrollo
 
 ```bash
+npm install
 npm run dev
 ```
 
 ## Producción
 
 ```bash
+npm install
 npm run build
 npm start
 ```
 
-## Con PM2
+## Cómo jugar
 
-```bash
-npm run build
-pm2 start ecosystem.config.js
-```
-
-El proyecto se sirve en `/tres-en-raya`.
+1. Abre la app en el navegador.
+2. Introduce un código de sala y pulsa "Unirse a sala".
+3. Comparte el mismo código con un amigo para que se una.
+4. ¡El primero en conseguir 3 en raya gana!
